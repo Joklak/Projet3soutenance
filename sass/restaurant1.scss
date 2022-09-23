@@ -1,0 +1,303 @@
+@import 'animation';
+.restaurantheader {
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	max-width: 1100px;
+	margin: auto;
+}
+
+.sectionrestaurant {
+	max-width: 1100px;
+	margin: auto;
+}
+
+.menu_restaurant {
+	background-color: #F2F2F2;
+	padding: 10px;
+	border-radius: 45px 45px 0px 0px;
+	font-family: Roboto;
+	z-index: 5;
+	margin-top: -30px;
+}
+
+.hautheader {
+	display: flex;
+	align-items: center;
+}
+
+.button_fleche {
+	cursor: pointer;
+	outline: inherit;
+	border: none;
+	background: none;
+	color: inherit;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	justify-content: start;
+	margin-left: 5px;
+}
+
+.fleche {
+	font-size: 25px;
+	margin-right: 40px;
+}
+
+.logo_icone {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.ligne_titre_menu {
+	margin-top: 5px;
+	width: 50px;
+	margin-bottom: 20px;
+	border-bottom: solid 2px #99E2D0;
+}
+
+.titre_menu_plat {
+	margin: 5px;
+}
+
+.titre_plat {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.prix_plat {
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 5px;
+
+}
+
+.recette_plat {
+	font-size: 15px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: calc(100% - 100px);
+
+}
+
+.plat_restaurant {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background-color: white;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0px 12px 12px -7px #ABABAB;
+	overflow-x: hidden;
+
+	&:hover {
+		.partie_droite_animation {
+			transform: translateX(0);
+
+			animation-duration: 0.8s;
+		}
+
+		.prix_plat {
+			animation: prix;
+			animation-duration: 0.8s;
+			animation-fill-mode: forwards;
+		}
+
+		.check {
+			animation: checkbox 1s;
+			animation-delay: 0.2s;
+			animation-fill-mode: forwards;
+		}
+	}
+}
+
+.categorie1 {
+	animation: texteapparition 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+.categorie2 {
+	animation: texteapparition 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+.categorie3 {
+	animation: texteapparition 1s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+
+.francaise {
+	font-size: 30px;
+	font-weight: lighter;
+	font-family: Shrikhand;
+}
+
+.intro_restau {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 15px;
+}
+
+.heart_position {
+	cursor: pointer;
+	outline: inherit;
+	border: none;
+	background: none;
+	color: inherit;
+	left: 50px;
+	height: 30px;
+	width: 30px;
+	display: flex;
+}
+
+.heart_position:hover .heart {
+	opacity: 0%;
+}
+
+.heart_position:hover .heart_plein {
+	opacity: 100%;
+	background: linear-gradient(90deg, #FF79DA, #9356DC);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.partie_gauche_plat {
+	padding: 10px 0px;
+	width: 100%;
+
+	h3 {
+		margin: 2px 0px 2px 10px;
+	}
+
+	p {
+		margin: 2px 0px 2px 10px;
+	}
+}
+
+
+.heart {
+	opacity: 100%;
+	position: absolute;
+	font-size: 25px;
+
+}
+
+.heart_plein {
+	opacity: 0%;
+	position: absolute;
+	font-size: 25px;
+
+}
+
+.image_restaurant {
+	width: 100%;
+	object-fit: cover;
+}
+
+.commander {
+	border: 0;
+	padding: 15px;
+	font-weight: 500;
+	font-size: 20px;
+	border-radius: 60px;
+	color: #fff;
+	background-color: #686868;
+	background-image: linear-gradient(0deg, rgba(147, 86, 220, .9), rgba(255, 121, 218, .9));
+	transition-duration: .25s;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+		text-decoration: none;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+	}
+}
+
+.button_commander {
+	display: flex;
+	justify-content: center;
+}
+
+.imagebackground {
+	background-image: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: -20px;
+	z-index: 2;
+}
+
+.imagebackground2 {
+	background-image: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: -20px;
+	z-index: 2;
+}
+
+.imagebackground3 {
+	background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: -20px;
+	z-index: 2;
+}
+
+
+.imagebackground4 {
+	background-image: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: -20px;
+	z-index: 2;
+}
+
+.partieanimation {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.partie_droite_animation {
+	background-color: #99e2d0;
+	display: flex;
+	padding: 10px 0px;
+	align-items: center;
+	justify-content: center;
+	transition-duration: .5s;
+	transform: translateX(55px);
+	height: 50px;
+	width: 50px;
+
+}
+
+.check {
+	color: white;
+	font-size: 20px;
+	display: flex;
+	overflow: hidden;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+}

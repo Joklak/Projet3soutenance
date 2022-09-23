@@ -1,0 +1,134 @@
+
+@keyframes checkbox {
+  0% {
+    transform: rotate(0deg);
+  }  
+ 50% {
+  transform: rotate(180deg);
+ }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+    
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
+
+
+@keyframes coeurplein{
+  0% {
+    opacity: 0;
+    }
+  
+ 
+  50% {
+    opacity: 0.5;
+  }  
+  
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes coeurvide{
+  0% {
+    opacity: 1;
+    }
+  
+ 
+  50% {
+    opacity: 0.5;
+  }  
+  
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes texteapparition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes prix {
+  0% {
+    transform:translate(0px);
+  }
+
+  100% {
+    transform:translate(-20px);
+  }
+}
